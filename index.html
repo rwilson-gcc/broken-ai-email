@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Email Classifier – Repair Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+    <h1>🔧 AI Email Classifier – Repair Simulator</h1>
+    <p class="subtitle">
+        The AI is misclassifying obvious phishing emails. Fix the broken config below,
+        then press <b>Re‑Run AI</b> to retrain the model.
+    </p>
+
+    <!-- Progress Bar -->
+    <div id="progress">
+        <div id="progress-fill"></div>
+    </div>
+
+    <!-- Email Viewer -->
+    <div id="email-box">
+        <h2 id="email-title"></h2>
+        <pre id="email-body"></pre>
+    </div>
+
+    <!-- Config Editor -->
+    <h3>🔧 AI Config (Fix Me)</h3>
+    <textarea id="config-editor" spellcheck="false"></textarea>
+
+    <button id="run-btn">Re‑Run AI</button>
+
+    <!-- AI Confidence Meter -->
+    <div id="meter-box">
+        <p>AI Confidence</p>
+        <div id="meter">
+            <div id="meter-fill"></div>
+        </div>
+    </div>
+
+    <!-- Result -->
+    <div id="result-box"></div>
+
+    <!-- Hidden Flag -->
+    <div id="flag" class="hidden">
+        🎉 <b>FLAG:</b> FLAG{AI_CONFIG_REPAIRED_SUCCESSFULLY}
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
